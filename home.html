@@ -67,6 +67,44 @@ input[type=text]:focus {
 .example::-webkit-scrollbar {
   display: none;
 }
+.BUTTON_LRA {
+   background: #F63D3D;
+   background-image: -webkit-linear-gradient(top, #F63D3D, #D01E1E);
+   background-image: -moz-linear-gradient(top, #F63D3D, #D01E1E);
+   background-image: -ms-linear-gradient(top, #F63D3D, #D01E1E);
+   background-image: -o-linear-gradient(top, #F63D3D, #D01E1E);
+   background-image: -webkit-gradient(to bottom, #F63D3D, #D01E1E);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 10px;
+   color: #FFFFFF;
+   font-family: Open Sans;
+   font-size: 25px;
+   font-weight: bold;
+   padding: 10px;
+   -webkit-box-shadow: 1px 0 8px 0 #000000;
+   -moz-box-shadow: 1px 0 8px 0 #000000;
+   box-shadow: 1px 0 8px 0 #000000;
+   text-shadow: 1px 1px 20px #000000;
+   border: solid #EF1313 1px;
+   text-decoration: none;
+   cursor: pointer;
+   text-align: center;
+}
+
+.BUTTON_LRA:hover {
+   border: solid #F90C0C 1px;
+   background: #F1131E;
+   background-image: -webkit-linear-gradient(top, #F1131E, #DD0101);
+   background-image: -moz-linear-gradient(top, #F1131E, #DD0101);
+   background-image: -ms-linear-gradient(top, #F1131E, #DD0101);
+   background-image: -o-linear-gradient(top, #F1131E, #DD0101);
+   background-image: -webkit-gradient(to bottom, #F1131E, #DD0101);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
     </style>
   
 </head>
@@ -96,9 +134,9 @@ input[type=text]:focus {
 			    </div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav flex-child-menu menu-right" style="position: absolute; right: 0;">               
-						<li class="btn loginLink" style="margin-right:4px"><a href="{{ url_for('/login') }}">LOG In</a></li>
-						<li class="btn signupLink"style="margin-left:4px"><a href="{{ url_for('/singup') }}">sign up</a></li>
+					<ul class="nav navbar-nav flex-child-menu menu-right">               
+						<li style="margin-right:4px" ><button class="BUTTON_LRA" ><a href="/login">LOG In</a></button></li>
+						<li style="margin-left:4px" ><button class="BUTTON_LRA"><a href="/signup">sign up</a></button></li>
 					</ul>
 				</div>
 			<!-- /.navbar-collapse -->

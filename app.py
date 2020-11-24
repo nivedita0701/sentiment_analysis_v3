@@ -129,12 +129,13 @@ def chhalaang_rev(request):
     db.session.add(rev)
     db.session.commit()
 
-@app.route('/login')
-def login():
+@app.route('/login', methods=['GET'])
+def login()
+
     return render_template("login.html")
 
 @app.route('/signup')
-def login():
+def signup():
     return render_template("signup.html")
 
 def truncate(number) -> float:
